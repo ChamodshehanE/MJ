@@ -13,5 +13,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function redirectToAnotherPage() {
   // Redirect to the flowers.html page in the "D" folder on the desktop
-  window.location.href = 'file:///C:/Users/User/OneDrive/Desktop/D/flowers.html';
+  window.location.href = 'flowers.html';
 }

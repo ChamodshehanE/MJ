@@ -1,0 +1,80 @@
+body {
+  background: linear-gradient(45deg, #000000, #4a4a4a);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Quicksand', sans-serif; /* Use a Google Font or another beautiful font */
+}
+
+#valentines-messages {
+  text-align: center;
+  color: white;
+}
+
+#happy-valentines,
+#love-you {
+  font-size: 3em; /* Adjust the font size as needed */
+  font-weight: bold;
+  opacity: 0;
+}
+
+#happy-valentines.fadeIn,
+#love-you.fadeIn {
+  animation: fadeIn 3s forwards, moveUp 3s forwards;
+}
+
+#gif-container {
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
+#spiderman-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.5em;
+  background-color: #e52828; /* Spider-Man red */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#spiderman-button:hover {
+  background-color: #0d141f; /* Dark blue background on hover */
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes moveUp {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

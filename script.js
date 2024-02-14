@@ -13,5 +13,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function redirectToAnotherPage() {
   // Redirect to the flowers.html page in the "D" folder on the desktop
-  window.location.href = 'flowers.html';
+  window.location.href = 'https://github.com/ChamodshehanE/MJ/blob/Mj/flowers.html';
 }
